@@ -1,0 +1,22 @@
+from turtle import *
+from random import choice
+
+tim = Turtle()
+max_side = int(input("max side greater than 3: "))
+color = ['red', 'green', 'blue', 'orange']
+
+def side_drawer(max_side):
+    for side in range(max_side):
+        ang = 360 / max_side
+        forward(100)
+        right(ang)
+
+
+for s_all in range(3, max_side):
+    side_drawer(s_all)
+    pencolor(choice(color))
+    setx(0)
+    sety(0)
+
+screen = Screen()
+screen.exitonclick()
