@@ -1,0 +1,17 @@
+import turtle as t
+import random
+
+tim = t.Turtle()
+
+color = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+direction = [90, 180, 270, 360]
+
+for i in range(600):
+    tim.width(10)
+    tim.speed("fastest")
+    tim.color(random.choice(color))
+    tim.forward(20)
+    tim.right(random.choice(direction))
+
+screen = t.Screen()
+screen.exitonclick()
