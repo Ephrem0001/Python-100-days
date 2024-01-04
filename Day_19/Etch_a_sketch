@@ -1,0 +1,39 @@
+from turtle import Turtle, Screen
+
+tim = Turtle()
+screen = Screen()
+
+
+def go_front():
+    tim.forward(20)
+
+
+def go_back():
+    tim.back(20)
+
+
+def go_left():
+    tim.left(10)
+    tim.forward(20)
+
+
+def go_right():
+    tim.right(10)
+    tim.forward(20)
+
+
+def c_clear():
+    tim.clear()
+    tim.penup()
+    tim.home()
+    tim.pendown()
+
+screen.listen()
+
+screen.onkey(go_front, "w")
+screen.onkey(go_back, "s")
+screen.onkey(go_left, "a")
+screen.onkey(go_right, "d")
+screen.onkey(c_clear, "c")
+
+screen.exitonclick()
