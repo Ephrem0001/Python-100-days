@@ -1,5 +1,7 @@
-from turtle import  Screen
+from turtle import Screen
 from paddle import Paddle
+from ball import Ball
+import random
 
 screen = Screen()
 screen.bgcolor("black")
@@ -10,6 +12,10 @@ screen.tracer(0)
 r_paddle = Paddle(350, 0)
 l_paddle = Paddle(-350, 0)
 
+x_ball = random.randint(0,350)
+y_ball = random.randint(0,350)
+
+ball_pos = Ball(x_ball, y_ball)
 
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
