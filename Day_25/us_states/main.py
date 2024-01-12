@@ -11,5 +11,3 @@ data = pandas.read_csv("50_states.csv")
 
 answer_state = screen.textinput(title="Guess the state", prompt="What's state's name")
 print(answer_state)
-
-
