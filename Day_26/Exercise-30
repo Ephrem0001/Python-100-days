@@ -5,6 +5,4 @@ with open("file2.txt") as file2:
   list2 = file2.readlines()
     
 result = [int(num) for num in list1 if num in list2]
-
-# Your code above 👆
 print(result)
