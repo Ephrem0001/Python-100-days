@@ -1,2 +1,2 @@
 number = [1, 2, 3]
-new_number = [n+1 for n in num]
+new_number = [n+1 for n in number]
