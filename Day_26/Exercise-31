@@ -1,5 +1,3 @@
 sentence = input()
-# 🚨 Don't change code above 👆
-# Write your code below 👇
 dic_par = {word : len(word) for word in sentence.split()}
 print(dic_par)
