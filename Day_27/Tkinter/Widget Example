@@ -1,0 +1,30 @@
+from tkinter import *
+
+window = Tk()
+window.title("Widget Examples")
+window.minsize(width=500, height=500)
+
+label = Label(text="this is a label", foreground="blue")
+label.config(text="this is a new text")
+label.pack()
+
+
+def action():
+    print(entry.get())
+
+
+button = Button(text="Click me", command=action)
+button.pack()
+
+entry = Entry(width=20)
+entry.insert(END, string="entry")
+print(entry.get())
+entry.pack()
+
+text = Text(height=20, width=30)
+text.focus()
+text.insert(END, "Example of Multi-line text entry.")
+print(text.get("1.0", END))
+text.pack()
+
+window.mainloop()
