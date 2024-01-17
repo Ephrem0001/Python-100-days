@@ -1,0 +1,8 @@
+def add(*args):
+    summ = 0
+    for n in args:
+        summ += n
+    print(summ)
+
+
+add(5, 6, 7)
