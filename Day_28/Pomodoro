@@ -35,5 +35,7 @@ S_button.grid(column=0, row=2)
 R_button = Button(text="reset")
 R_button.grid(column=2, row=2)
 
-window.mainloop()
+check_mark = Label(text="☑" ,fg=GREEN, bg=YELLOW)
+check_mark.grid(column=1 , row=3)
 
+window.mainloop()
