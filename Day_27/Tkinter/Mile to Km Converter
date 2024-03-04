@@ -23,7 +23,6 @@ label.place(x=35, y=70)
 
 label_km = Label(text="0")
 label_km.place(x=100, y=70)
-
 label = Label(text="Km")
 label.place(x=160, y=70)
 
